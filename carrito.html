@@ -15,12 +15,12 @@
       color: white;
     }
     .btn-secondary {
-      background-color: blue;
-      border-color: blue;
+      background-color: rgb(0, 0, 0);
+      border-color: rgb(0, 0, 0);
     }
     .btn-primary {
-      background-color: blue;
-      border-color: blue;
+      background-color: rgb(0, 0, 0);
+      border-color: rgb(0, 0, 0);
     }
     .card-body {
       background-color: rgb(255, 0, 0);
@@ -29,8 +29,8 @@
       background-color: red;
     }
     .btn-danger {
-      background-color: blue;
-      border-color: blue;
+      background-color: rgb(0, 0, 0);
+      border-color: rgb(0, 0, 0);
     }
     #bank-info {
       background-color: red;
@@ -75,7 +75,7 @@
 <body>
   <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark">
-  <a class="navbar-brand" href="/index.html">
+  <a class="navbar-brand" href="../index.html">
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Dragon_Ball_Z_Logo_A.png" alt="Logo Dragon Ball Z">
   CERRAR SESION</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,6 +83,9 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="paginaprincipal.html" style="margin-right:5px;margin-top:15px;">TIENDA</a>
+      </li>
       
       <li class="nav-item">
         <a class="nav-link" href="novedades.html" style="margin-right:5px;margin-top:15px;">NOVEDADES</a>
@@ -158,12 +161,13 @@
             <div class="mb-3">
               <h6>Seleccionar Banco:</h6>
               <div class="d-flex justify-content-between align-items-center">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Yape_text_app_icon.png" alt="Banco A" class="img-thumbnail" style="cursor: pointer;  width: 100px; height: 100px;" onclick="selectBank('Banco BCP', 'https://seeklogo.com/images/B/bcp-logo-87BA4231DF-seeklogo.com.png')">
-                <img src="https://seeklogo.com/images/P/plin-logo-967A4AF583-seeklogo.com.png" alt="Banco B" class="img-thumbnail" style="cursor: pointer;  width: 100px; height: 100px;" onclick="selectBank('Banco INTERBANK', 'https://www.americanexpress.com/content/dam/amex/pe/network/Experiences/nuevo2020/Logo-Interbank.png')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Banco C" class="img-thumbnail" style="cursor: pointer; width: 100px; height: 100px;" onclick="selectBank('VISA', 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Visa_Logo.png/640px-Visa_Logo.png')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1200px-Mastercard-logo.svg.png" alt="Banco D" class="img-thumbnail" style="cursor: pointer; width: 100px; height: 100px;" onclick="selectBank('MASTERCARD', 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/2560px-MasterCard_Logo.svg.png')">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Yape_text_app_icon.png" alt="Banco A" class="img-thumbnail" style="cursor: pointer; width: 80px; height: 80px;" onclick="selectBank('Banco BCP', 'https://seeklogo.com/images/B/bcp-logo-87BA4231DF-seeklogo.com.png')">
+                  <img src="https://seeklogo.com/images/P/plin-logo-967A4AF583-seeklogo.com.png" alt="Banco B" class="img-thumbnail" style="cursor: pointer; width: 80px; height: 80px;" onclick="selectBank('Banco INTERBANK', 'https://www.americanexpress.com/content/dam/amex/pe/network/Experiences/nuevo2020/Logo-Interbank.png')">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Banco C" class="img-thumbnail" style="cursor: pointer; width: 80px; height: 80px;" onclick="selectBank('VISA', 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Visa_Logo.png/640px-Visa_Logo.png')">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1200px-Mastercard-logo.svg.png" alt="Banco D" class="img-thumbnail" style="cursor: pointer; width: 80px; height: 80px;" onclick="selectBank('MASTERCARD', 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/2560px-MasterCard_Logo.svg.png')">
               </div>
-            </div>
+          </div>
+          
             <a href="pagofactura.html" class="btn btn-primary">PROCEDER EL PAGO</a> <br> <br>
             <a href="paginaprincipal.html" class="btn btn-secondary">VOLVER A ELEGIR PRODUCTO</a>
           </div>
